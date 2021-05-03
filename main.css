@@ -1,0 +1,272 @@
+body{
+background-color: #ffffff;
+font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
+    letter-spacing: 3px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left:7em;
+    padding-right: 15em;    
+}
+
+h4{
+    font-family: Montserrat;
+    font-weight: 300;
+    /* text-decoration: underline;  */
+    border-bottom: .5px solid #000;
+    /* padding-bottom: 3px; */
+    margin-top: -100px;
+    padding-bottom: 200px;
+    padding-left:70em;
+    padding-right: 10em;
+    
+    
+}
+
+
+/* NAVBAR CSS Styling*/
+nav{
+    padding-left:57em;
+    padding-right: 57em;
+    /* TODO: figure out no longer staying fixed */
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index:10;
+    background-color: #F1EDE9
+
+  }
+
+
+/* ABOUT ME CSS*/
+.about-me {
+    height: 100vh !important;
+    background-color: white !important;
+    padding: 20vh 50px 0 50px;
+    column-count: 2;
+}
+
+.about-me img{
+  width: 60%;
+  border-radius: 8%;
+  margin-bottom: 4em;
+}
+
+.about-me p{
+  text-align: left;
+  font-size:1em;
+  line-height: 1.5rem;
+}
+.paragraph2{
+  text-indent: 2.5em;
+}
+/* the span tag that wrap starts off my paragraph */
+.bigText {
+  font-size:1.2em;
+  padding-right:.5em;
+}
+
+/* Mobile version utilization */
+
+@media screen and (max-width: 900px) {
+    .about-me {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        /* height: 25vh !important; */
+        /* padding-bottom: 50vh; */
+        /* background-color: #F1EDE9 !important; */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "nav"
+        "about-image"
+        "about-paragraph"
+        "footer"
+        ;
+    } 
+    nav{
+        grid-area:nav;
+    }
+    .about-image{
+        grid-area:about-image;
+    }
+    .about-paragraph{
+        grid-area:about-paragraph;
+    }
+    }
+
+
+
+
+/* Footer Styling */
+footer{
+    grid-area:footer;
+}
+
+footer p{
+    font-size: 1em;
+}
+
+footer li{
+
+display:inline;
+}
+
+footer ul{
+    max-width: 640px;
+    margin: 2em auto;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul li a:hover{
+    text-decoration: none;
+    color: #929368
+}
+
+footer svg{
+    width: 60%;
+}
+
+
+
+/* Nav styling cont'd */
+nav li a {
+    color: #707070;
+    font-weight: 400;
+    opacity: 1;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color:rgb(233, 123, 50);
+    opacity: 1;
+    text-decoration: none;
+  }
+.icon{
+    background-color:#F1EDE9;
+    width: 250px;
+    height: auto;
+    justify-content: center;
+}
+
+
+footer p{
+    font-size: 1em;
+}
+
+
+.icon{
+    grid-area: icon;
+}
+nav{
+    grid-area:nav;
+}
+
+@media (min-width:1040px){
+.container{
+    width:100%;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "icon icon"
+    "nav nav"
+    "content content"
+    "footer footer";
+}
+nav ul{
+    display:flex;
+    margin:0;
+    padding:0;
+    /* justify-content: space-between;
+    padding-bottom: 200px;
+    /* line-height: 400px; 
+    justify-content: left;
+    /* padding-left: -900px; */
+
+    /* flex-direction:column; */
+}
+
+/* .portrait{
+    width: 300px;
+    height: auto;
+} */
+
+h3{
+    width: 100%;
+    margin: 0 auto;
+    /* padding-left:250%; */
+    /* margin-top: -90%; */
+    font-size:100px;
+    font-family: Montserrat;
+}
+
+    .st0{
+        fill:#BAA692;
+    }
+
+    .st1{
+        font-family:'Montserrat';
+    }
+    .st2{
+        font-size:100px;
+    }
+    .st3{letter-spacing:2;}
+    .st4{
+        fill:none;
+        stroke:#BAA692;
+        stroke-width:3;
+    }
+    #Linha_4{
+        fill:none;stroke:#BAA692;stroke-width:3;}
+    }
+
+   
+li{
+display:inline;
+padding:25px;
+font-size: 1em;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav{
+    text-align: right;
+}
+
+a:link {
+    text-decoration:none;
+}
+
+a:visited {
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
